@@ -1,6 +1,6 @@
 import { PlaceholderPattern } from '@/components/ui/placeholder-pattern';
 import AppLayout from '@/layouts/app-layout';
-import { dashboard, events } from '@/routes';
+import { dashboard, events_index } from '@/routes';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/react';    
 import { Button } from '@/components/ui/button';
@@ -10,10 +10,9 @@ import { useState } from 'react';
 const breadcrumbs: BreadcrumbItem[] = [
     {
         title: 'Events',
-        href: events().url,
+        href: events_index().url,
     },
 ];
-
 
 
 export default function Index() {
@@ -23,7 +22,7 @@ export default function Index() {
     const eventcss = 'border p-2 mb-2 rounded-md w-full max-w-md';
     
     const handleOpenModal = () => {
-        setOpen((prev) => !prev);
+        setOpen((banana) => !banana);
     }
 
     return (

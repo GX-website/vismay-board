@@ -13,7 +13,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid, Calendar } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid, Calendar, UserSearch, User, Users, BriefcaseBusiness } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -26,6 +26,26 @@ const mainNavItems: NavItem[] = [
         title: 'Events',
         href: '/events',
         icon: Calendar,
+    },
+    {
+        title: 'Jobs',
+        href: '/jobs',
+        icon: BriefcaseBusiness,
+    },
+    {
+        title: 'Departments',
+        href: '/department',
+        icon: Users,
+    },
+    {
+        title: 'Applicants',
+        href: '/applicants',
+        icon: UserSearch,
+    },
+    {
+        title: 'Employees',
+        href: '/employees',
+        icon: User,
     },
 ];
 
