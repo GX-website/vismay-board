@@ -13,7 +13,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid, Calendar, UserSearch, User, Users, BriefcaseBusiness } from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -22,17 +22,42 @@ const mainNavItems: NavItem[] = [
         href: dashboard(),
         icon: LayoutGrid,
     },
+    {
+        title: 'Events',
+        href: '/events',
+        icon: Calendar,
+    },
+    {
+        title: 'Jobs',
+        href: '/jobs',
+        icon: BriefcaseBusiness,
+    },
+    {
+        title: 'Departments',
+        href: '/department',
+        icon: Users,
+    },
+    {
+        title: 'Applicants',
+        href: '/applicants',
+        icon: UserSearch,
+    },
+    {
+        title: 'Employees',
+        href: '/employees',
+        icon: User,
+    },
 ];
 
 const footerNavItems: NavItem[] = [
     {
-        title: 'Repository',
-        href: 'https://github.com/laravel/react-starter-kit',
+        title: '',
+        href: '',
         icon: Folder,
     },
     {
-        title: 'Documentation',
-        href: 'https://laravel.com/docs/starter-kits#react',
+        title: '',
+        href: '',
         icon: BookOpen,
     },
 ];
